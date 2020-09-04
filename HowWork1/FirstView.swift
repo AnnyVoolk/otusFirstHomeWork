@@ -20,6 +20,11 @@ struct FirstView: View {
                 .font(.title)
             Button (action: {
                 self.selection = 1
+            }) {
+                Text("Show catalog")
+            }
+            Button (action: {
+                self.selection = 1
                 self.catalogViewModel.selectionListItem = 0
             }) {
                 Text("Show breakfast variants")
