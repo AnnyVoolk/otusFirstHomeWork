@@ -14,20 +14,20 @@ struct AboutUsView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 50) {
-        Text("Our aim")
-            .font(.title)
-            .padding(.leading, 20)
-        Text("Your life is too shot to spend it on cooking. So we decided to help you and do it for you)")
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
+            Text("Our aim")
+                .font(.title)
+                .padding(.leading, 20)
+            Text("Your life is too shot to spend it on cooking. So we decided to help you and did it for you)")
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
             Button(action: {
                 self.showingDetail.toggle()
             }) {
                 Text("Contact information")
-                .frame(width: 200, height: 50, alignment: .center)
-                .background(Color.blue)
-                .foregroundColor(Color.primary)
-                .cornerRadius(40)
+                    .frame(width: 200, height: 50, alignment: .center)
+                    .background(Color.blue)
+                    .foregroundColor(Color.primary)
+                    .cornerRadius(40)
                 
             }
             .sheet(isPresented: $showingDetail) {
